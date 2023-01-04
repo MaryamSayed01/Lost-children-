@@ -19,4 +19,3 @@ The goal of the challenge is to develop a system that system that generate older
 - Linux or macOS
 - NVIDIA GPU + CUDA CuDNN (CPU may be possible with some modifications, but is not inherently supported)
 - Python 3
-```
