@@ -35,3 +35,22 @@ class AgingTransforms(TransformsConfig):
 				transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
 		}
 		return transforms_dict
+
+
+
+
+
+class GenderTransforms(TransformsConfig):
+
+	def __init__(self, opts):
+		super(GenderTransforms, self).__init__(opts)
+    
+	def get_transforms(self):
+		transforms_dict = {
+			'gender_transform': transforms.Compose([
+				transforms.Resize(224),
+				transforms.ToTensor(),
+				transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+		}
+		return transforms_dict
+
